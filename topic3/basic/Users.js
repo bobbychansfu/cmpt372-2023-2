@@ -1,14 +1,14 @@
-exports = class User{
-    constructor(fname,lname,age){
-        this.fname = fname
-        this.lname = lname
-        this.age = age
+class User {
+    constructor(fname, lname, age) {
+      this.fname = fname;
+      this.lname = lname;
+      this.age = age;
     }
-    fullName = function() {
-        console.log(this.fname + " " + this.lname)
+  
+    fullName() {
+      console.log(this.fname + ' ' + this.lname);
     }
-}
-
-exports = function hello() {
-
-}
+  }
+  
+  module.exports = User;
+  
